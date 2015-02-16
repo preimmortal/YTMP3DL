@@ -13,9 +13,13 @@ while(1):
 	if(d == 'y'):
 		break
 	elif (d == 'n'):
-		#raw_input ("Copy URL then press Enter\n")
 		link = pyperclip.paste()
-	print "Link is: " + link
+	try:
+		print "Link is: " + link
+	except:
+		raw_input("Copy URL then press Enter\n")
+		d = 'n'
+		continue
 	d = raw_input("Is the link correct? ('y' or 'n') OR (Ctrl+C to exit)\n")
 d = os.getcwd()
 #print "Current Directory: " + d
