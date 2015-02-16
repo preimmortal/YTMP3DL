@@ -2,6 +2,8 @@ from lxml import html
 import requests
 
 import os
+import subprocess
+import time
 
 # Ask for Page URL
 # raw_page = raw_input("Enter web page URL: ")
@@ -26,9 +28,15 @@ for i in range (0, len(videos)):
     linkList.append(YTBASEADDR+vidlinks[i])
 
 # build link list
+f = open("playlist.txt", "w")
 for l in linkList:
-    print l
+    #print l
+    #os.system(("youtube-dl" + " --no-playlist --extract-audio --audio-format mp3 "+l))
+    #time.sleep(10)
+    f.write(l+"\n")
+f.close()
 
 
-os.system("vlc -vvv "+linkList[0])
+os.system("youtube-dl --extract-audio --audio-format mp3 --batch-file playlist.txt")
+
 
