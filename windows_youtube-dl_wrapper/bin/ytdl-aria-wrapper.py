@@ -3,6 +3,7 @@ import subprocess
 import os
 import time
 import re
+import glob
 
 
 #Print Arguments
@@ -73,7 +74,7 @@ input.close()
 #Make Aria Call with temp file
 exec_aria = list()
 exec_aria.append("aria2c.exe")
-exec_aria.append("--dir="+pdir+"/playlist")
+exec_aria.append("--dir="+pdir+"/downloads")
 exec_aria.append("--max-concurrent-downloads=10")
 exec_aria.append("--max-connection-per-server=16")
 exec_aria.append("--input-file="+iname)
@@ -86,9 +87,34 @@ os.remove(fname)
 os.remove(iname)
 
 
-#TODO Convert M4A to MP3
+# Convert M4A to MP3
+
+workdir = pdir+"/downloads/"
+exec_ffmpeg = list()
+exec_ffmpeg.append("ffmpeg.exe")
+exec_ffmpeg.append("-i")
+exec_ffmpeg.append("INPUT_FILE")
+exec_ffmpeg.append("-acodec")
+exec_ffmpeg.append("libmp3lame")
+exec_ffmpeg.append("-ab")
+exec_ffmpeg.append("128k")
+exec_ffmpeg.append("OUTPUT_FILE")
+for file in glob.glob(workdir+"*.m4a"):
+	#print("Must convert: " + file)
+	out = re.sub(".m4a", ".mp3", file)
+	if(os.path.exists(out)):
+		print out + "already exists, skipping"
+		os.remove(file)
+		continue
+	exec_ffmpeg[2] = file
+	exec_ffmpeg[7] = out
+	ffmpeg_proc = subprocess.Popen(exec_ffmpeg)
+	ffmpeg_proc.wait()
+	#remove the m4a file
+	os.remove(file)
 
 
+print "DONE - Ready for next job"
 
 
 

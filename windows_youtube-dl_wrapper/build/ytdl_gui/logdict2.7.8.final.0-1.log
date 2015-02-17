@@ -543,9 +543,37 @@ posix: None -> None
   DEL posix
 posix: None -> None
   DEL posix
-__main__: <PyScript '__main__' C:\Users\Pre\Documents\GitHub\YTMP3DL\windows_youtube-dl_wrapper\PyInstaller-2.1\PyInstaller\loader\pyi_os_path.py imports=[('sys', 0, 0, -1), ('posix.environ', 0, 1, -1), ('nt.listdir', 0, 1, -1), ('nt.environ', 0, 1, -1), ('posix', 0, 1, -1), ('posix.listdir', 0, 1, -1), ('nt', 0, 1, -1)] binaries=[] datas=[]> -> <PyScript '__main__' .\ytdl_gui.py imports=[('wx', 0, 0, -1), ('os', 0, 0, -1), ('subprocess.Popen', 0, 0, -1), ('thread', 0, 0, -1), ('subprocess', 0, 0, -1), ('pyperclip', 0, 0, -1)] binaries=[] datas=[]>
+__main__: <PyScript '__main__' C:\Users\Pre\Documents\GitHub\YTMP3DL\windows_youtube-dl_wrapper\PyInstaller-2.1\PyInstaller\loader\pyi_os_path.py imports=[('sys', 0, 0, -1), ('posix.environ', 0, 1, -1), ('nt.listdir', 0, 1, -1), ('nt.environ', 0, 1, -1), ('posix', 0, 1, -1), ('posix.listdir', 0, 1, -1), ('nt', 0, 1, -1)] binaries=[] datas=[]> -> <PyScript '__main__' .\ytdl_gui.py imports=[('subprocess', 0, 0, -1), ('os', 0, 0, -1), ('subprocess.Popen', 0, 0, -1), ('wx', 0, 0, -1), ('pyperclip', 0, 0, -1)] binaries=[] datas=[]>
 wx: None -> <PkgModule 'wx' C:\Python27\lib\site-packages\wx-3.0-msw\wx\__init__.pyc imports=[('__version__', 0, 0, -1), ('wx._core', 0, 0, -1), ('wx._core.*', 0, 0, -1)] binaries=[] datas=[]>
 pyperclip: None -> <PyModule 'pyperclip' C:\Users\Pre\Documents\GitHub\YTMP3DL\windows_youtube-dl_wrapper\pyperclip.pyc imports=[('platform', 0, 0, -1), ('gtk', 0, 1, -1), ('os', 0, 0, -1), ('subprocess.Popen', 0, 0, -1), ('PyQt4.QtCore', 0, 1, -1), ('subprocess', 0, 0, -1), ('PyQt4.QtGui', 0, 1, -1), ('subprocess.call', 0, 0, -1), ('ctypes', 0, 1, -1), ('subprocess.PIPE', 0, 0, -1)] binaries=[] datas=[]>
+fcntl: None -> None
+  DEL fcntl
+posix: None -> None
+  DEL posix
+posix: None -> None
+  DEL posix
+posix: None -> None
+  DEL posix
+_emx_link: None -> None
+  DEL _emx_link
+_emx_link: None -> None
+  DEL _emx_link
+pwd: None -> None
+  DEL pwd
+org: None -> None
+  DEL org
+org: None -> None
+  DEL org
+readline: None -> None
+  DEL readline
+readline: None -> None
+  DEL readline
+fcntl: None -> None
+  DEL fcntl
+org: None -> None
+  DEL org
+org: None -> None
+  DEL org
 wx.__version__: None -> <PyModule 'wx.__version__' C:\Python27\lib\site-packages\wx-3.0-msw\wx\__version__.pyc imports=[] binaries=[] datas=[]>
 wx.wx: None -> None
 wx._core: None -> <PyModule 'wx._core' C:\Python27\lib\site-packages\wx-3.0-msw\wx\_core.pyc imports=[('__version__.*', 0, 0, -1), ('warnings', 0, 0, -1), ('locale', 0, 1, -1), ('types', 1, 0, -1), ('sys', 0, 0, -1), ('_controls', 0, 0, -1), ('_windows', 0, 0, -1), ('_windows.*', 0, 0, -1), ('_misc.*', 0, 0, -1), ('warnings', 1, 0, -1), ('signal', 1, 1, -1), ('_gdi', 0, 0, -1), ('atexit', 0, 0, -1), ('_controls.*', 0, 0, -1), ('types', 0, 0, -1), ('__version__', 0, 0, -1), ('_misc', 0, 0, -1), ('warnings', 0, 1, -1), ('_core_', 0, 0, -1), ('codecs', 0, 1, -1), ('new', 0, 0, -1), ('_gdi.*', 0, 0, -1)] binaries=[] datas=[]>
@@ -563,34 +591,6 @@ wx._core_: None -> <ExtensionModule 'wx._core_' C:\Python27\lib\site-packages\wx
 wx.codecs: None -> None
 wx.new: None -> None
 new: None -> <PyModule 'new' C:\Python27\lib\new.pyc imports=[('types.CodeType', 0, 0, -1), ('types.MethodType', 0, 0, -1), ('types', 0, 0, -1), ('types.InstanceType', 0, 0, -1), ('warnings', 0, 0, -1), ('types.FunctionType', 0, 0, -1), ('types.ModuleType', 0, 0, -1), ('warnings.warnpy3k', 0, 0, -1), ('types.ClassType', 0, 0, -1)] binaries=[] datas=[]>
-posix: None -> None
-  DEL posix
-posix: None -> None
-  DEL posix
-posix: None -> None
-  DEL posix
-_emx_link: None -> None
-  DEL _emx_link
-_emx_link: None -> None
-  DEL _emx_link
-fcntl: None -> None
-  DEL fcntl
-readline: None -> None
-  DEL readline
-pwd: None -> None
-  DEL pwd
-org: None -> None
-  DEL org
-org: None -> None
-  DEL org
-readline: None -> None
-  DEL readline
-fcntl: None -> None
-  DEL fcntl
-org: None -> None
-  DEL org
-org: None -> None
-  DEL org
 wx._controls_: None -> <ExtensionModule 'wx._controls_' C:\Python27\lib\site-packages\wx-3.0-msw\wx\_controls_.pyd imports=[] binaries=[] datas=[]>
 wx._windows_: None -> <ExtensionModule 'wx._windows_' C:\Python27\lib\site-packages\wx-3.0-msw\wx\_windows_.pyd imports=[] binaries=[] datas=[]>
 wx._misc_: None -> <ExtensionModule 'wx._misc_' C:\Python27\lib\site-packages\wx-3.0-msw\wx\_misc_.pyd imports=[] binaries=[] datas=[]>

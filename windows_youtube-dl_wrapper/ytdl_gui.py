@@ -84,7 +84,9 @@ class windowClass(wx.Frame):
 			EXT = "%(ext)s"
 		elif(self.rb2_video.GetValue()):
 			EXT = "mp4"
-		proc = ["ytdl-aria-wrapper.exe", "-o", "%(title)s."+EXT, "--no-playlist"]
+		ytdlwrapper = "ytdl-aria-wrapper.exe"
+		#ytdlwrapper = "ytdl-aria-wrapper.py"
+		proc = [ytdlwrapper, "-o", "%(title)s."+EXT, "--no-playlist"]
 		if(self.rb1_audio.GetValue()):
 			proc.append("--extract-audio")
 			proc.append("--audio-format")

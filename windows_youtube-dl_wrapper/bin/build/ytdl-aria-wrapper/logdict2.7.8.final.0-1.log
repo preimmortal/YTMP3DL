@@ -543,7 +543,7 @@ posix: None -> None
   DEL posix
 posix: None -> None
   DEL posix
-__main__: <PyScript '__main__' C:\Users\Pre\Documents\GitHub\YTMP3DL\windows_youtube-dl_wrapper\PyInstaller-2.1\PyInstaller\loader\pyi_os_path.py imports=[('sys', 0, 0, -1), ('posix.environ', 0, 1, -1), ('nt.listdir', 0, 1, -1), ('nt.environ', 0, 1, -1), ('posix', 0, 1, -1), ('posix.listdir', 0, 1, -1), ('nt', 0, 1, -1)] binaries=[] datas=[]> -> <PyScript '__main__' .\ytdl-aria-wrapper.py imports=[('os', 0, 0, -1), ('re', 0, 0, -1), ('time', 0, 0, -1), ('subprocess', 0, 0, -1), ('sys', 0, 0, -1)] binaries=[] datas=[]>
+__main__: <PyScript '__main__' C:\Users\Pre\Documents\GitHub\YTMP3DL\windows_youtube-dl_wrapper\PyInstaller-2.1\PyInstaller\loader\pyi_os_path.py imports=[('sys', 0, 0, -1), ('posix.environ', 0, 1, -1), ('nt.listdir', 0, 1, -1), ('nt.environ', 0, 1, -1), ('posix', 0, 1, -1), ('posix.listdir', 0, 1, -1), ('nt', 0, 1, -1)] binaries=[] datas=[]> -> <PyScript '__main__' .\ytdl-aria-wrapper.py imports=[('re', 0, 0, -1), ('sys', 0, 0, -1), ('os', 0, 0, -1), ('subprocess', 0, 0, -1), ('glob', 0, 0, -1), ('time', 0, 0, -1)] binaries=[] datas=[]>
 posix: None -> None
   DEL posix
 posix: None -> None
