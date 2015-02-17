@@ -1,0 +1,9 @@
+('C:\\Users\\Pre\\Documents\\GitHub\\YTMP3DL\\windows_youtube-dl_wrapper\\bin\\dist\\ytdl-aria-wrapper.exe',
+ True,
+ False,
+ None,
+ None,
+ [],
+ None,
+ False,
+ 1424179647L)

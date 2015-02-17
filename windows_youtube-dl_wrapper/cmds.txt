@@ -1,0 +1,3 @@
+//Build exe Command
+
+python .\PyInstaller-2.1\pyinstaller.py --onefile --windowed .\ytdl_gui.py

@@ -2,7 +2,6 @@ import wx
 import os
 from subprocess import Popen
 import pyperclip
-import thread
 
 class windowClass(wx.Frame):
 	def __init__(self, *args, **kwargs):
@@ -85,7 +84,7 @@ class windowClass(wx.Frame):
 			EXT = "%(ext)s"
 		elif(self.rb2_video.GetValue()):
 			EXT = "mp4"
-		proc = ["youtube-dl.exe", "-o", pdir+"/%(playlist)s/%(title)s."+EXT, "--no-playlist"]
+		proc = ["ytdl-aria-wrapper.exe", "-o", "%(title)s."+EXT, "--no-playlist"]
 		if(self.rb1_audio.GetValue()):
 			proc.append("--extract-audio")
 			proc.append("--audio-format")
