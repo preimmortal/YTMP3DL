@@ -109,7 +109,7 @@ def main():
 	#print "New Directory: " + d
 
 	app = wx.App()
-	windowClass(None)#, -1, style=wx.SYSTEM_MENU | wx.CLOSE_BOX | wx.CAPTION)
+	windowClass(None, -1, size = (390,480), style=wx.SYSTEM_MENU | wx.CLOSE_BOX | wx.CAPTION)
 	
 	app.MainLoop()
 	
