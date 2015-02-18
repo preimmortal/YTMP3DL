@@ -19,3 +19,6 @@ When program is launched:
 
 To Update:
 If there are any errors in the program, first try pressing the update button to update youtube-dl.exe
+
+
+**Warning: Downloads will continue even after YTDownloader is exitted. (If you want to stop downloads, manually close aria2c.exe in Task Manager
