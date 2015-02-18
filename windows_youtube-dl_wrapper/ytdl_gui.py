@@ -57,7 +57,7 @@ class windowClass(wx.Frame):
 		bitmap1 = wx.Bitmap("../img/lupi.jpg")
 		bitmap1 = self.scale_bitmap(bitmap1, 200, 206)
 		control1 = wx.StaticBitmap(self.panel, -1, bitmap1)
-		control1.SetPosition((200, 100))
+		control1.SetPosition((10, 100))
 		
 		#bitmap2 = wx.Bitmap("../img/pony.jpg")
 		#bitmap2 = self.scale_bitmap(bitmap2, 216, 206)
