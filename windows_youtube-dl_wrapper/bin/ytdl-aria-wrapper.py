@@ -16,6 +16,7 @@ lname = exec_cmd[len(exec_cmd)-1]
 exec_cmd[len(exec_cmd)-1] = "--simulate"
 exec_cmd.append("--get-filename")
 exec_cmd.append("--get-url")
+exec_cmd.append("--ignore-errors")
 exec_cmd.append(lname)
 
 print("Building link-list, this may take some time")

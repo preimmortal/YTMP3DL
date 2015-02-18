@@ -43,11 +43,26 @@ class windowClass(wx.Frame):
 		# Download Button
 		downloadButton = wx.Button(self.panel, 2, 'Download', (10, 370))
 
+		# Update Button
+		updateButton = wx.Button(self.panel, 3, 'Update', (288, 50))
+		
 		# Bind Buttons
 		self.Bind(wx.EVT_BUTTON, self.Refresh, refreshButton)
 		self.Bind(wx.EVT_RADIOBUTTON, self.SetType, self.rb1_audio)
 		self.Bind(wx.EVT_RADIOBUTTON, self.SetType, self.rb2_video)
 		self.Bind(wx.EVT_BUTTON, self.Download, downloadButton)
+		self.Bind(wx.EVT_BUTTON, self.Update, updateButton)
+		
+		# Import Images
+		bitmap1 = wx.Bitmap("../img/lupi.jpg")
+		bitmap1 = self.scale_bitmap(bitmap1, 200, 206)
+		control1 = wx.StaticBitmap(self.panel, -1, bitmap1)
+		control1.SetPosition((200, 100))
+		
+		#bitmap2 = wx.Bitmap("../img/pony.jpg")
+		#bitmap2 = self.scale_bitmap(bitmap2, 216, 206)
+		#control2 = wx.StaticBitmap(self.panel, -1, bitmap2)
+		#control2.SetPosition((10, 100))
 		
 		# Set Title and Show GUI
 		self.SetTitle('Pre\'s Youtube Downloader')
@@ -55,7 +70,12 @@ class windowClass(wx.Frame):
 		self.statusbar = self.CreateStatusBar(1)
 		self.statusbar.SetStatusText("Downloading Audio",0)
 		self.Show(True)
-		
+	
+	def scale_bitmap(self, bitmap, width, height):
+		image = wx.ImageFromBitmap(bitmap)
+		image = image.Scale(width, height, wx.IMAGE_QUALITY_HIGH)
+		result = wx.BitmapFromImage(image)
+		return result
 	
 	def Refresh(self, e):
 		#Update Link Here
@@ -95,7 +115,11 @@ class windowClass(wx.Frame):
 		elif(self.rb2_video.GetValue()):
 			proc.append(genLink)
 		#wx.StaticText(self.panel, -1, "Executing Command:\n"+"".join(proc), pos=(110,370), size=(300,100))
-		print "".join(proc)
+		#print "".join(proc)
+		Popen(proc)
+	
+	def Update(self, e):
+		proc = ["youtube-dl.exe", "-U"]
 		Popen(proc)
 	
 	def Quit(self, e):
