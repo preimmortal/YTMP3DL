@@ -113,8 +113,12 @@ for file in glob.glob(workdir+"*.m4a"):
 	ffmpeg_proc.wait()
 	#remove the m4a file
 	os.remove(file)
-
 """
+exec_convert = list()
+exec_convert.append("convert.bat")
+convert_proc = subprocess.Popen(exec_convert)
+convert_proc.wait()
+
 print "DONE - Ready for next job"
 
 
